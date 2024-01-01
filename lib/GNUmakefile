@@ -7,7 +7,6 @@ clean:
 TARGET_ARCH_TYPES := NONE SSE SSE2 SSE3 SSSE3 SSE4_1 SSE4_2 AVX AVX2 AVX512 ARMV7A ARMV8A ARMV8_1A ARMV8_2A ARMV8_3A ARMV8_4A ARMV8_5A ARMV8_6A ARMV9_0A ARMV9_2A
 TARGET_ARCHS_TRANSFORMED := $(shell echo $(TARGET_ARCHS) | tr '.' '_' | tr -d -- '-' | tr '[:lower:]' '[:upper:]')
 
-# Check if the transformed value is in TARGET_ARCHS_2
 ifneq ($(filter-out $(TARGET_ARCH_TYPES),$(TARGET_ARCHS_TRANSFORMED)),)
 $(error Error: invalid TARGET_ARCHS: $(filter-out $(TARGET_ARCH_TYPES),$(TARGET_ARCHS_TRANSFORMED)))
 endif
