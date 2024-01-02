@@ -232,4 +232,27 @@ typedef union {
 	ft_matrix_f64_vec4 r[3];
 } ft_matrix_f64_mat3;
 
+ft_matrix_f32_vec4
+	ft_matrix_f32_vec4_add(ft_matrix_f32_vec4 a, ft_matrix_f32_vec4 b);
+ft_matrix_f32_vec3
+	ft_matrix_f32_vec3_add(ft_matrix_f32_vec3 a, ft_matrix_f32_vec3 b);
+ft_matrix_f64_vec4
+	ft_matrix_f64_vec4_add(ft_matrix_f64_vec4 a, ft_matrix_f64_vec4 b);
+ft_matrix_f64_vec3
+	ft_matrix_f64_vec3_add(ft_matrix_f64_vec3 a, ft_matrix_f64_vec3 b);
+
+ft_matrix_f32_vec4
+	ft_matrix_f32_vec4_subtract(ft_matrix_f32_vec4 a, ft_matrix_f32_vec4 b);
+ft_matrix_f32_vec3
+	ft_matrix_f32_vec3_subtract(ft_matrix_f32_vec3 a, ft_matrix_f32_vec3 b);
+ft_matrix_f64_vec4
+	ft_matrix_f64_vec4_subtract(ft_matrix_f64_vec4 a, ft_matrix_f64_vec4 b);
+ft_matrix_f64_vec3
+	ft_matrix_f64_vec3_subtract(ft_matrix_f64_vec3 a, ft_matrix_f64_vec3 b);
+
+ft_matrix_f32_vec4 ft_matrix_f32_vec4_scale(ft_matrix_f32_vec4 a, float b);
+ft_matrix_f32_vec3 ft_matrix_f32_vec3_scale(ft_matrix_f32_vec3 a, float b);
+ft_matrix_f64_vec4 ft_matrix_f64_vec4_scale(ft_matrix_f64_vec4 a, double b);
+ft_matrix_f64_vec3 ft_matrix_f64_vec3_scale(ft_matrix_f64_vec3 a, double b);
+
 #endif
