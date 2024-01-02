@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd "$(dirname "$0")" || exit
+
 cmake --build build/none
 cmake --build build/SSE
 cmake --build build/SSE2
